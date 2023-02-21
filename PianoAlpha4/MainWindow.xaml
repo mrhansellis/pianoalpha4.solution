@@ -15,8 +15,9 @@
             </Setter>
         </Style>
     </Window.Resources>
-       
+
     <Grid>
+
         <Button x:Name="C" Width="50" Height="50" Content="Button" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.005,0.5" Click="C_Button_Click">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -26,7 +27,8 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="E" Width="50" Height="50" Content="Button" HorizontalAlignment="Center" Margin="-300,-100,-100,0" VerticalAlignment="Center" RenderTransformOrigin="0.005,0.5" Click="E_Button_Click">
+
+        <Button x:Name="E" Width="50" Height="50" Content="Button" HorizontalAlignment="Center" Margin="-300,-100,-100,0" VerticalAlignment="Center" RenderTransformOrigin="0.005,0.5" Click="E_Button_Click" Visibility="Hidden">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
@@ -35,11 +37,62 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="G" Width="50" Height="50" Content="Button" HorizontalAlignment="Center" Margin="300,-100,100,0" VerticalAlignment="Center" RenderTransformOrigin="0.005,0.5" Click="G_Button_Click">
+
+        <Button x:Name="G" Width="50" Height="50" Content="Button" HorizontalAlignment="Center" Margin="300,-100,100,0" VerticalAlignment="Center" RenderTransformOrigin="0.005,0.5" Click="G_Button_Click" Visibility="Hidden">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Grid>
                         <Ellipse Fill="Purple" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="D" Width="40" Height="40" Content="Button" HorizontalAlignment="Center" Margin="-150,100,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.005,0.5" Click="D_Button_Click" Visibility="Hidden">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="Blue" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="F" Width="40" Height="40" Content="Button" HorizontalAlignment="Center" Margin="0,-150,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.005,0.5" Click="F_Button_Click" Visibility="Hidden">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="BlueViolet" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="A" Width="40" Height="40" Content="Button" HorizontalAlignment="Center" Margin="150,100,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.005,0.5" Click="A_Button_Click" Visibility="Hidden">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="LightBlue" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="B" Width="50" Height="50" Content="Button" HorizontalAlignment="Center" Margin="300,-100,100,0" VerticalAlignment="Center" RenderTransformOrigin="0.005,0.5" Click="B_Button_Click" Visibility="Hidden">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="Chartreuse" Margin="-199,-87,199,87" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="C5" Width="60" Height="60" Content="Button" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.005,0.5" Click="C5_Button_Click" Visibility="Hidden">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="Pink" />
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
