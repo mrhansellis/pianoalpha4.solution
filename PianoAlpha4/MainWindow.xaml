@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PianoAlpha4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="800"
-        WindowStartupLocation="CenterScreen" Background="#e1e5f2">
+        Title="Sonic Orbitron" Height="500" Width="800"
+        WindowStartupLocation="CenterScreen" Background="#e1e5f2" FontFamily="Segoe UI Black">
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="Template">
@@ -108,6 +108,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
+        <Label x:Name="Title" Content="Sonic Orbitron" HorizontalAlignment="Left" Margin="55,30,0,0" VerticalAlignment="Top" BorderBrush="Black" FontFamily="Bahnschrift" FontSize="38" Foreground="#FF9C2525"/>
 
     </Grid>
 </Window>
