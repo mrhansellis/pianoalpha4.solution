@@ -32,4 +32,8 @@
 * Quick successive mouse clicks will cancel animations and cause them to stack (resulting in incomplete or 'paused' animations)
 
 ## License
+<<<<<<< HEAD
 * Licensed under GNU license v3.0
+=======
+* 
+>>>>>>> 72f41012c04d4a92389cf8f55b0c2f311127b589
