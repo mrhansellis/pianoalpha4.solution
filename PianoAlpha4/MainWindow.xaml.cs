@@ -46,13 +46,35 @@ namespace PianoAlpha4
         {
             var button = sender as Button;
             
-            var WidthAnimation = new DoubleAnimation() { To = 150, Duration = TimeSpan.FromSeconds(0.1), AutoReverse = true };
-            var HeightAnimation = new DoubleAnimation() { To = 150, Duration = TimeSpan.FromSeconds(0.1), AutoReverse = true };
+            var WidthAnimation = new DoubleAnimation() { From = 50, To = 150, Duration = TimeSpan.FromSeconds(0.1), AutoReverse = true };
+            var HeightAnimation = new DoubleAnimation() { From = 50, To = 150, Duration = TimeSpan.FromSeconds(0.1), AutoReverse = true };
 
             button.BeginAnimation(Button.WidthProperty, WidthAnimation);
             button.BeginAnimation(Button.HeightProperty, HeightAnimation);
         }
-        
+
+        public void AnimationSmall(object sender, RoutedEventArgs e)
+        {
+            var button = sender as Button;
+
+            var WidthAnimation = new DoubleAnimation() { From = 40, To = 140, Duration = TimeSpan.FromSeconds(0.1), AutoReverse = true };
+            var HeightAnimation = new DoubleAnimation() { From = 40, To = 140, Duration = TimeSpan.FromSeconds(0.1), AutoReverse = true };
+
+            button.BeginAnimation(Button.WidthProperty, WidthAnimation);
+            button.BeginAnimation(Button.HeightProperty, HeightAnimation);
+        }
+
+        public void Animation3(object sender, RoutedEventArgs e)
+        {
+            var button = sender as Button;
+
+            var WidthAnimation = new DoubleAnimation() { From = 60, To = 160, Duration = TimeSpan.FromSeconds(0.1), AutoReverse = true };
+            var HeightAnimation = new DoubleAnimation() { From = 60, To = 160, Duration = TimeSpan.FromSeconds(0.1), AutoReverse = true };
+
+            button.BeginAnimation(Button.WidthProperty, WidthAnimation);
+            button.BeginAnimation(Button.HeightProperty, HeightAnimation);
+        }
+
         public MainWindow()
         {
             InitializeComponent();
@@ -93,7 +115,7 @@ namespace PianoAlpha4
 
         private void D_Button_Click(object sender, RoutedEventArgs e)
         {
-            Animation(sender, e);
+            AnimationSmall(sender, e);
             playD4Note.Open(D4Note);
             playD4Note.Play();
             F.Visibility = Visibility.Visible;
@@ -101,7 +123,7 @@ namespace PianoAlpha4
 
         private void F_Button_Click(object sender, RoutedEventArgs e)
         {
-            Animation(sender, e);
+            AnimationSmall(sender, e);
             playF4Note.Open(F4Note);
             playF4Note.Play();
             A.Visibility = Visibility.Visible;
@@ -109,7 +131,7 @@ namespace PianoAlpha4
 
         private void A_Button_Click(object sender, RoutedEventArgs e)
         {
-            Animation(sender, e);
+            AnimationSmall(sender, e);
             playA5Note.Open(A5Note);
             playA5Note.Play();
             B.Visibility = Visibility.Visible;
@@ -125,7 +147,7 @@ namespace PianoAlpha4
 
         private void C5_Button_Click(object sender, RoutedEventArgs e)
         {
-            Animation(sender, e);
+            Animation3(sender, e);
             playC5Note.Open(C5Note);
             playC5Note.Play();
         }

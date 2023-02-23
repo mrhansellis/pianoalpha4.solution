@@ -24,6 +24,8 @@
 
 #### Initial Setup 
 1. Open Visual Studio and select 'Clone A Repository' and paste this link into the Repository Location field: https://github.com/mrhansellis/pianoalpha4.solution.git
+2. Navigate to MainWindow.xaml.cs. The code on lines 82 - 89 must be changed to match the path on your computer. 
+	```C4Note =  new Uri("file:///C:/YourPath/path/pianoalpha4.Solution/PianoAlpha4/Resources/c4.mp3");```
 2. Within Visual Studio, press the green arrow at the top center of the screen which will run the program.
 3. Enjoy!
 
@@ -32,8 +34,4 @@
 * Quick successive mouse clicks will cancel animations and cause them to stack (resulting in incomplete or 'paused' animations)
 
 ## License
-<<<<<<< HEAD
 * Licensed under GNU license v3.0
-=======
-* 
->>>>>>> 72f41012c04d4a92389cf8f55b0c2f311127b589
